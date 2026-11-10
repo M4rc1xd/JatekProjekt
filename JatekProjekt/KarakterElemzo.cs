@@ -87,13 +87,13 @@ namespace JatekProjekt
         // Ellenőrizd Any segítségével, hogy létezik-e olyan karakter, akinek 10 000 aranynál több van a zsebében!
         public bool VanETizEzerAranynalTobb()
         {
-            throw new NotImplementedException();
+            return karakterek.Any(k => k.Arany > 10000);
         }
 
         // Keresd meg FirstOrDefault segítségével az első olyan karaktert, akinek az aranya meghaladja az 5000-et!
         public Karakter LegelsoOvenKarakter()
         {
-            throw new NotImplementedException();
+            return karakterek.FirstOrDefault(k => k.Arany > 5000);
         }
 
 
